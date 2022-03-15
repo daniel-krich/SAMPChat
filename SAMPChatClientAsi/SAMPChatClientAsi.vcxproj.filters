@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="SAMP\ADE32.cpp">
+      <Filter>SAMP</Filter>
+    </ClCompile>
+    <ClCompile Include="SAMP\BitStream.cpp">
+      <Filter>SAMP</Filter>
+    </ClCompile>
+    <ClCompile Include="SAMP\CDetour.cpp">
+      <Filter>SAMP</Filter>
+    </ClCompile>
+    <ClCompile Include="SAMP\CDirect3DData.cpp">
+      <Filter>SAMP</Filter>
+    </ClCompile>
+    <ClCompile Include="SAMP\HookedRakClient.cpp">
+      <Filter>SAMP</Filter>
+    </ClCompile>
+    <ClCompile Include="SAMP\math_stuff.cpp">
+      <Filter>SAMP</Filter>
+    </ClCompile>
+    <ClCompile Include="SAMP\mem_funcs.cpp">
+      <Filter>SAMP</Filter>
+    </ClCompile>
+    <ClCompile Include="SAMP\RakClient.cpp">
+      <Filter>SAMP</Filter>
+    </ClCompile>
+    <ClCompile Include="SAMP\samp.cpp">
+      <Filter>SAMP</Filter>
+    </ClCompile>
+    <ClCompile Include="SAMPlugin\DialogResponse.cpp">
+      <Filter>SAMPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="SAMPlugin\CmdResponse.cpp">
+      <Filter>SAMPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="TCPClient\Client.cpp">
+      <Filter>TCPClient</Filter>
+    </ClCompile>
+    <ClCompile Include="TCPClient\Calls\OnConnectionClosed.cpp">
+      <Filter>TCPClient\Calls</Filter>
+    </ClCompile>
+    <ClCompile Include="TCPClient\Calls\OnReceiveData.cpp">
+      <Filter>TCPClient\Calls</Filter>
+    </ClCompile>
+    <ClCompile Include="SAMPlugin\RPCHook.cpp">
+      <Filter>SAMPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="SAMPlugin\FunctionHooks.cpp">
+      <Filter>SAMPlugin</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h" />
+    <ClInclude Include="SAMP\ADE32.h">
+      <Filter>SAMP</Filter>
+    </ClInclude>
+    <ClInclude Include="SAMP\BitStream.h">
+      <Filter>SAMP</Filter>
+    </ClInclude>
+    <ClInclude Include="SAMP\CDetour.h">
+      <Filter>SAMP</Filter>
+    </ClInclude>
+    <ClInclude Include="SAMP\CDirect3DData.h">
+      <Filter>SAMP</Filter>
+    </ClInclude>
+    <ClInclude Include="SAMP\cheat.h">
+      <Filter>SAMP</Filter>
+    </ClInclude>
+    <ClInclude Include="SAMP\HookedRakClient.h">
+      <Filter>SAMP</Filter>
+    </ClInclude>
+    <ClInclude Include="SAMP\math_stuff.h">
+      <Filter>SAMP</Filter>
+    </ClInclude>
+    <ClInclude Include="SAMP\mem_funcs.h">
+      <Filter>SAMP</Filter>
+    </ClInclude>
+    <ClInclude Include="SAMP\proxyIDirect3D9.h">
+      <Filter>SAMP</Filter>
+    </ClInclude>
+    <ClInclude Include="SAMP\RakClient.h">
+      <Filter>SAMP</Filter>
+    </ClInclude>
+    <ClInclude Include="SAMP\samp.h">
+      <Filter>SAMP</Filter>
+    </ClInclude>
+    <ClInclude Include="SAMP\stddefs.h">
+      <Filter>SAMP</Filter>
+    </ClInclude>
+    <ClInclude Include="SAMP\stdtypes.h">
+      <Filter>SAMP</Filter>
+    </ClInclude>
+    <ClInclude Include="TCPClient\Client.h">
+      <Filter>TCPClient</Filter>
+    </ClInclude>
+    <ClInclude Include="SAMPlugin\FunctionHooks.h">
+      <Filter>SAMPlugin</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="SAMP">
+      <UniqueIdentifier>{b4b05b7b-d593-4983-9fcc-83cbd7532cfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SAMPlugin">
+      <UniqueIdentifier>{e0f6ed47-515a-48d6-90c2-4936f1527dbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TCPClient">
+      <UniqueIdentifier>{2e10195d-f8d5-43dd-9f6f-8c9003f7c7d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TCPClient\Calls">
+      <UniqueIdentifier>{87a52514-8fab-4bd1-b4a5-ab5ff9d3c855}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

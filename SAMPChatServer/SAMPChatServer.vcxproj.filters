@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="TCPServerHelper">
+      <UniqueIdentifier>{e3841d59-a6d7-429a-a5f8-35aef1f466ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server">
+      <UniqueIdentifier>{cfb93de1-ecc8-43e1-8494-fc7cc7e29f78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server\Callbacks">
+      <UniqueIdentifier>{86e3a6e6-8e2c-43f9-8018-95e1636ee7ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MySQL">
+      <UniqueIdentifier>{959f6070-7f0b-4b56-9f1f-1bc7821bc93e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Server\Server.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="TCPServerHelper\TCPServerHelper.cpp">
+      <Filter>TCPServerHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="TCPServerHelper\NetHelper.cpp">
+      <Filter>TCPServerHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\Callbacks\OnClientConnect.cpp">
+      <Filter>Server\Callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\Callbacks\OnClientDisconnect.cpp">
+      <Filter>Server\Callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\Callbacks\OnClientSendMessage.cpp">
+      <Filter>Server\Callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="MySQL\MySQLConnector.cpp">
+      <Filter>MySQL</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\Callbacks\OnCommandResponse.cpp">
+      <Filter>Server\Callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\Callbacks\OnDialogResponse.cpp">
+      <Filter>Server\Callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="Server\Callbacks\OnServerInit.cpp">
+      <Filter>Server\Callbacks</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h" />
+    <ClInclude Include="Server\Server.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+    <ClInclude Include="TCPServerHelper\TCPServerHelper.h">
+      <Filter>TCPServerHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="TCPServerHelper\NetHelper.h">
+      <Filter>TCPServerHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL\MySQLConnector.h">
+      <Filter>MySQL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Inc\mysql\lib\libeay32.dll" />
+    <None Include="Inc\mysql\lib\mysqlcppconn-7-vs14.dll" />
+    <None Include="Inc\mysql\lib\ssleay32.dll" />
+  </ItemGroup>
+</Project>
