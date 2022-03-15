@@ -10,9 +10,9 @@ bool OnClientConnect(ConnectedClient* client)
 	if (ipDuplicates >= 2) return false;
 	else
 	{
-		PrintGUI(str::format("Входящее подключение к серверу ({0})", client->GetIP()));
-		client->SendClientMessage("Здравствуй, введите {00cc66}!auth {FFFFFF}для авторизации/регистрации.", CHAT_RGB(255, 255, 255));
-		client->SendClientMessage("Если Вам нужна помощь с командами - {00cc66}!help", CHAT_RGB(255, 255, 255));
+		PrintGUI(str::format("Incoming connection to the server ({0})", client->GetIP()));
+		client->SendClientMessage("Greetings, enter {00cc66}!auth {FFFFFF}to login/register.", CHAT_RGB(255, 255, 255));
+		client->SendClientMessage("View all available commands - {00cc66}!help", CHAT_RGB(255, 255, 255));
 		return true;
 	}
 }

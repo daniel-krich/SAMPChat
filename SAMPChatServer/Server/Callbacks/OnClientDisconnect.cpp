@@ -9,12 +9,12 @@ void OnClientDisconnect(ConnectedClient* client)
 			if (f_client->storage.t_TempUserId_Invite == client->storage.m_ID)
 			{
 				f_client->storage.t_TempUserId_Invite = 0;
-				f_client->SendClientMessage(str::format("{0} отключился, предложение отозвано.", client->storage.m_Name), CHAT_RGB(255, 136, 77));
+				f_client->SendClientMessage(str::format("{0} disconnected, offer withdrawn.", client->storage.m_Name), CHAT_RGB(255, 136, 77));
 			}
 		}
-		PrintGUI(str::format("{0} ({1}) отключился от сервера", client->storage.m_Name, client->GetIP()));
+		PrintGUI(str::format("{0} ({1}) disconnected from the server", client->storage.m_Name, client->GetIP()));
 	}
-	else PrintGUI(str::format("{0} отключился от сервера", client->GetIP()));
+	else PrintGUI(str::format("{0} disconnected from the server", client->GetIP()));
 }
 
 void OnClientDisconnectHandle(ConnectedClient* client)

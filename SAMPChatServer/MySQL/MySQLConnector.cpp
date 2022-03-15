@@ -12,7 +12,7 @@ MySQLConnector::MySQLConnector()
 		this->driver = get_driver_instance();
 		this->SqlConnection = this->driver->connect(connection_properties);
 		this->SqlConnection->setSchema(SQL_DB);
-		PrintGUI("[SQL] Подключение к базе-данных MySQL прошло успешно.");
+		PrintGUI("[SQL] Connection to the MySQL database was successful.");
 	}
 	catch (const std::exception& ex)
 	{
