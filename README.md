@@ -14,6 +14,8 @@ Libraries:
 - RapidJson
 - DirectX SDK 2010
 
+Runs only with x86 + release configuration.
+
 ### Server ###
 ![chat1](https://user-images.githubusercontent.com/87533517/158464583-e3e3c1eb-2165-4011-8453-6d3974988b13.png)
 
