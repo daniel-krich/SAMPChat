@@ -37,8 +37,8 @@
 #include <mysql/include/jdbc/cppconn/prepared_statement.h>
 
 #include "MySQL/MySQLConnector.h"
-#include "TCPServerHelper/TCPServerHelper.h"
-#include "TCPServerHelper/NetHelper.h"
+#include "TCPServer/TCPServer.h"
+#include "TCPServer/NetHelper.h"
 #include "Server/Server.h"
 
 #define PrintGUI_MAX_LINES 200

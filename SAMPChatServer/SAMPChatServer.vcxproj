@@ -174,15 +174,15 @@ copy "$(SolutionDir)$(ProjectName)\Inc\mysql\lib\ssleay32.dll" "$(TargetDir)\"</
     <ClCompile Include="Server\Callbacks\OnDialogResponse.cpp" />
     <ClCompile Include="Server\Callbacks\OnServerInit.cpp" />
     <ClCompile Include="Server\Server.cpp" />
-    <ClCompile Include="TCPServerHelper\NetHelper.cpp" />
-    <ClCompile Include="TCPServerHelper\TCPServerHelper.cpp" />
+    <ClCompile Include="TCPServer\NetHelper.cpp" />
+    <ClCompile Include="TCPServer\TCPServer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h" />
     <ClInclude Include="MySQL\MySQLConnector.h" />
     <ClInclude Include="Server\Server.h" />
-    <ClInclude Include="TCPServerHelper\NetHelper.h" />
-    <ClInclude Include="TCPServerHelper\TCPServerHelper.h" />
+    <ClInclude Include="TCPServer\NetHelper.h" />
+    <ClInclude Include="TCPServer\TCPServer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

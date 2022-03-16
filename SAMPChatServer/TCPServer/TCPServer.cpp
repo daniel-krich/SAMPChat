@@ -176,8 +176,8 @@ void TCPServer::MySQLChecker()
     {
         if (this->SQLInstance()->SqlConnection->isClosed() || !this->SQLInstance()->SqlConnection->isValid())
         {
-            if (this->SQLInstance()->SqlConnection->reconnect()) PrintGUI("[SQL] Было потеряно соединение с сервером MySQL, подключение восстановлено.");
-            else PrintGUI("[SQL] Было потеряно соединение с сервером MySQL, попытка подключиться не удалась...");
+            if (this->SQLInstance()->SqlConnection->reconnect()) PrintGUI("[SQL] Connection to MySQL was lost and restored.");
+            else PrintGUI("[SQL] Connection to MySQL was lost, retrying...");
             //
             this->SQLInstance()->ReconnectInterval = GetTickCount64() + 1500;
         }
